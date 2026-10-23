@@ -1,6 +1,6 @@
 # Factory Control · install artifacts (beta)
 
-Public mirror of the **v0.0.2** release assets from the private [`aguvoda/factory-control`](https://github.com/aguvoda/factory-control) repository so anyone can install without GitHub auth or npm publish.
+Public mirror of the **v0.0.3-beta** release assets from the private [`aguvoda/factory-control`](https://github.com/aguvoda/factory-control) repository so anyone can install without GitHub auth or npm publish.
 
 ## Install (anonymous · one command each)
 
@@ -26,11 +26,11 @@ sh install-plugin.sh --ide none
 
 ```bash
 npm_config_allow_remote=all npx --yes \
-  "https://github.com/matiaspakua/factory-control-install/releases/download/v0.0.2/factory-core-0.0.2.tgz" \
+  "https://github.com/matiaspakua/factory-control-install/releases/download/v0.0.3-beta/factory-core-0.0.3-beta.tgz" \
   init
 
 npm_config_allow_remote=all npx --yes \
-  "https://github.com/matiaspakua/factory-control-install/releases/download/v0.0.2/factory-plugin-0.0.2.tgz" \
+  "https://github.com/matiaspakua/factory-control-install/releases/download/v0.0.3-beta/factory-plugin-0.0.3-beta.tgz" \
   install --ide none
 ```
 
