@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Factory Control · plugin install (v0.0.1)
+# Factory Control · plugin install (v0.0.2)
 # One-liner: curl -fsSL <raw-url>/install-plugin.sh | bash -s -- --ide none
 # Or:        bash install-plugin.sh --ide none|vscode|cursor
 set -euo pipefail
 
-PLUGIN_TGZ="${FACTORY_PLUGIN_TGZ:-https://github.com/matiaspakua/factory-control-install/releases/download/v0.0.1/factory-plugin-0.0.1.tgz}"
+PLUGIN_TGZ="${FACTORY_PLUGIN_TGZ:-https://github.com/matiaspakua/factory-control-install/releases/download/v0.0.2/factory-plugin-0.0.2.tgz}"
 
 if ! command -v npx >/dev/null 2>&1; then
   echo "error: npx not found (need Node.js 22+)" >&2
