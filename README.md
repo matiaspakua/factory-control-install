@@ -5,13 +5,15 @@ Public mirror of the **v0.0.1** release assets from the private [`aguvoda/factor
 ## Install (anonymous)
 
 ```bash
-curl -fsSL -o /tmp/factory-core-0.0.1.tgz \
-  https://github.com/matiaspakua/factory-control-install/releases/download/v0.0.1/factory-core-0.0.1.tgz \
-  && npx --yes file:///tmp/factory-core-0.0.1.tgz init
+npm_config_allow_remote=all npx --yes \
+  "https://github.com/matiaspakua/factory-control-install/releases/download/v0.0.1/factory-core-0.0.1.tgz" \
+  init
 
-curl -fsSL -o /tmp/factory-plugin-0.0.1.tgz \
-  https://github.com/matiaspakua/factory-control-install/releases/download/v0.0.1/factory-plugin-0.0.1.tgz \
-  && npx --yes file:///tmp/factory-plugin-0.0.1.tgz install
+npm_config_allow_remote=all npx --yes \
+  "https://github.com/matiaspakua/factory-control-install/releases/download/v0.0.1/factory-plugin-0.0.1.tgz" \
+  install --ide none
 ```
+
+npm 12 defaults `allow-remote=none`; the env var is required for remote tarball URLs. Alternative: `curl` + `npx file://`.
 
 Source of truth and development: `aguvoda/factory-control` (private). This repo only hosts downloadable tarballs/VSIX.
