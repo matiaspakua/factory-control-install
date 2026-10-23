@@ -11,5 +11,10 @@ if ! command -v npx >/dev/null 2>&1; then
   exit 1
 fi
 
+# Default --ide none when invoked with no args (curl|bash without -s --)
+if [[ $# -eq 0 ]]; then
+  set -- --ide none
+fi
+
 export npm_config_allow_remote=all
 exec npx --yes "$PLUGIN_TGZ" install "$@"
