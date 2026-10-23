@@ -18,3 +18,5 @@ fi
 
 export npm_config_allow_remote=all
 exec npx --yes "$PLUGIN_TGZ" install "$@"
+
+# mirrored assets: v0.0.2
