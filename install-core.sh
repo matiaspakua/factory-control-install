@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Factory Control · CORE init (v0.0.5-beta)
+# Factory Control · CORE init (v0.0.6-beta)
 # One-liner: curl -fsSL <raw-url>/install-core.sh | bash
 # Or:        bash install-core.sh [-- init flags…]
 set -euo pipefail
 
-CORE_TGZ="${FACTORY_CORE_TGZ:-https://github.com/matiaspakua/factory-control-install/releases/download/v0.0.5-beta/factory-core-0.0.5-beta.tgz}"
+CORE_TGZ="${FACTORY_CORE_TGZ:-https://github.com/matiaspakua/factory-control-install/releases/download/v0.0.6-beta/factory-core-0.0.6-beta.tgz}"
 PLUGIN_INSTALL_URL="${FACTORY_PLUGIN_INSTALL_URL:-https://raw.githubusercontent.com/matiaspakua/factory-control-install/main/install-plugin.sh}"
 
 if ! command -v npx >/dev/null 2>&1; then
