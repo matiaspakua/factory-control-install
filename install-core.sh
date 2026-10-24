@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Factory Control · CORE init (v0.0.6-beta)
+# Factory Control · CORE init (v0.1.0)
 # One-liner: curl -fsSL <raw-url>/install-core.sh | bash
 # Or:        bash install-core.sh [-- init flags…]
 set -euo pipefail
 
-CORE_TGZ="${FACTORY_CORE_TGZ:-https://github.com/matiaspakua/factory-control-install/releases/download/v0.0.6-beta/factory-core-0.0.6-beta.tgz}"
+CORE_TGZ="${FACTORY_CORE_TGZ:-https://github.com/matiaspakua/factory-control-install/releases/download/v0.1.0/factory-core-0.1.0.tgz}"
 PLUGIN_INSTALL_URL="${FACTORY_PLUGIN_INSTALL_URL:-https://raw.githubusercontent.com/matiaspakua/factory-control-install/main/install-plugin.sh}"
 
 if ! command -v npx >/dev/null 2>&1; then
@@ -17,7 +17,7 @@ npx --yes "$CORE_TGZ" init "$@"
 
 cat <<HINT
 
-── Cliente (hoy · mirror; npm @beta aún no está publicado) ──
+── Cliente (mirror v0.1.0) ──
 curl -fsSL ${PLUGIN_INSTALL_URL} | bash -s -- --ide none
 # o: --ide vscode | cursor | both
 HINT
